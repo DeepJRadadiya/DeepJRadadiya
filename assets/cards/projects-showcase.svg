@@ -66,9 +66,10 @@
     <text x="78" y="42" class="card-title">IRCTC-AutoBook</text>
     <text x="78" y="60" class="link-text">github.com/DeepJRadadiya/IRCTC-AutoBook ↗</text>
 
-    <text x="24" y="98" class="card-desc">Full‑stack pre-booking train reservation system. Features automated</text>
-    <text x="24" y="118" class="card-desc">background scheduling engines that trigger automated bookings instantly</text>
-    <text x="24" y="138" class="card-desc">when ticket slots open, paired with real-time admin management.</text>
+    <!-- Perfectly bounded text lines (~48 chars max) -->
+    <text x="24" y="98" class="card-desc">Full‑stack train reservation engine with automated</text>
+    <text x="24" y="118" class="card-desc">background schedulers. Instantly reserves seats as</text>
+    <text x="24" y="138" class="card-desc">soon as ticket slots open. Includes admin portals.</text>
 
     <g transform="translate(24, 162)">
       <rect width="64" height="22" rx="4" fill="#14161C" stroke="#222630"/>
@@ -107,9 +108,10 @@
     <text x="78" y="42" class="card-title">Zynk Realtime Suite</text>
     <text x="78" y="60" class="link-text">github.com/DeepJRadadiya/Zynk ↗</text>
 
-    <text x="24" y="98" class="card-desc">Real‑time multi-user communication &amp; video‑calling engine supporting</text>
-    <text x="24" y="118" class="card-desc">typing indicators, emoji reactions, and ultra-low latency 1-on-1 &amp;</text>
-    <text x="24" y="138" class="card-desc">group video sessions with active screen sharing &amp; media recording.</text>
+    <!-- Perfectly bounded text lines (~48 chars max) -->
+    <text x="24" y="98" class="card-desc">Real‑time communication &amp; video‑calling suite with</text>
+    <text x="24" y="118" class="card-desc">ultra-low latency sessions. Supports interactive</text>
+    <text x="24" y="138" class="card-desc">screen sharing, reactions &amp; active cloud record.</text>
 
     <g transform="translate(24, 162)">
       <rect width="64" height="22" rx="4" fill="#14161C" stroke="#222630"/>
@@ -140,10 +142,12 @@
     </g>
 
     <text x="66" y="38" class="card-title">Skill-Swap</text>
-    <text x="20" y="78" class="card-desc">Collaborative MERN ecosystem for</text>
-    <text x="20" y="98" class="card-desc">peer-to-peer skill exchanges without</text>
-    <text x="20" y="118" class="card-desc">money. Features live request workflows,</text>
-    <text x="20" y="138" class="card-desc">ratings &amp; moderation dashboards.</text>
+    
+    <!-- Perfectly bounded text lines (~29 chars max) -->
+    <text x="20" y="78" class="card-desc">Collaborative MERN marketplace</text>
+    <text x="20" y="98" class="card-desc">for zero-cost peer exchange.</text>
+    <text x="20" y="118" class="card-desc">Features automated workflows,</text>
+    <text x="20" y="138" class="card-desc">peer review &amp; trust dashboards.</text>
 
     <g transform="translate(20, 158)">
       <rect width="45" height="22" rx="4" fill="#14161C" stroke="#222630"/>
@@ -169,10 +173,12 @@
     </g>
 
     <text x="66" y="38" class="card-title">SpendWise</text>
-    <text x="20" y="78" class="card-desc">Full-stack finance application for</text>
-    <text x="20" y="98" class="card-desc">personal expense categorization and</text>
-    <text x="20" y="118" class="card-desc">group trip budget calculation with</text>
-    <text x="20" y="138" class="card-desc">automated split algorithms &amp; charts.</text>
+    
+    <!-- Perfectly bounded text lines (~29 chars max) -->
+    <text x="20" y="78" class="card-desc">Personal expense tracker and</text>
+    <text x="20" y="98" class="card-desc">group trip budget calculator.</text>
+    <text x="20" y="118" class="card-desc">Features smart cost algorithms</text>
+    <text x="20" y="138" class="card-desc">&amp; automated bill split charts.</text>
 
     <g transform="translate(20, 158)">
       <rect width="45" height="22" rx="4" fill="#14161C" stroke="#222630"/>
@@ -198,10 +204,12 @@
     </g>
 
     <text x="66" y="38" class="card-title">Batting-Mania</text>
-    <text x="20" y="78" class="card-desc">Interactive gaming portal featuring</text>
-    <text x="20" y="98" class="card-desc">engaging casual game loops, real‑money</text>
-    <text x="20" y="118" class="card-desc">reward pools, live player leaderboards</text>
-    <text x="20" y="138" class="card-desc">&amp; secure payment gateway flows.</text>
+    
+    <!-- Perfectly bounded text lines (~29 chars max) -->
+    <text x="20" y="78" class="card-desc">Interactive HTML5 gaming portal</text>
+    <text x="20" y="98" class="card-desc">with engaging gameplay loops,</text>
+    <text x="20" y="118" class="card-desc">real‑money daily reward pools,</text>
+    <text x="20" y="138" class="card-desc">&amp; real-time leaderboards.</text>
 
     <g transform="translate(20, 158)">
       <rect width="60" height="22" rx="4" fill="#14161C" stroke="#222630"/>
