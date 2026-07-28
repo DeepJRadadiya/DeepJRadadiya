@@ -17,7 +17,6 @@ import sys
 import os
 import glob
 
-# Ensure standard output can handle UTF-8 if possible, otherwise rely on safe ASCII fallback
 if hasattr(sys.stdout, "reconfigure"):
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -94,9 +93,14 @@ def switch_theme(target_theme_key):
 
         # Phase 1: Convert known theme hexes and parameters to tokens
         for t_key, t_val in THEMES.items():
+            # Match both prefixed hex (#00F0FF) and bare URL parameters (00F0FF)
             content = content.replace(t_val["primary"], "__TOKEN_PRIMARY__")
             content = content.replace(t_val["secondary"], "__TOKEN_SECONDARY__")
             content = content.replace(t_val["status"], "__TOKEN_STATUS__")
+            
+            content = content.replace(t_val["primary"].lstrip("#"), "__TOKEN_RAW_PRIMARY__")
+            content = content.replace(t_val["secondary"].lstrip("#"), "__TOKEN_RAW_SECONDARY__")
+            content = content.replace(t_val["status"].lstrip("#"), "__TOKEN_RAW_STATUS__")
             
             content = content.replace(f"theme={t_val['readme_theme']}", "theme=__TOKEN_README_THEME__")
             content = content.replace(f"color={t_val['graph_line']}&line={t_val['graph_line']}", "color=__TOKEN_LINE__&line=__TOKEN_LINE__")
@@ -107,6 +111,11 @@ def switch_theme(target_theme_key):
         content = content.replace("__TOKEN_PRIMARY__", target_theme["primary"])
         content = content.replace("__TOKEN_SECONDARY__", target_theme["secondary"])
         content = content.replace("__TOKEN_STATUS__", target_theme["status"])
+        
+        content = content.replace("__TOKEN_RAW_PRIMARY__", target_theme["primary"].lstrip("#"))
+        content = content.replace("__TOKEN_RAW_SECONDARY__", target_theme["secondary"].lstrip("#"))
+        content = content.replace("__TOKEN_RAW_STATUS__", target_theme["status"].lstrip("#"))
+
         content = content.replace("__TOKEN_README_THEME__", target_theme["readme_theme"])
         content = content.replace("__TOKEN_LINE__", target_theme["graph_line"])
         content = content.replace("__TOKEN_POINT__", target_theme["graph_point"])
