@@ -1,51 +1,41 @@
-<svg width="900" height="36" viewBox="0 0 900 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="24" viewBox="0 0 900 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="trace-left" x1="0" y1="0" x2="100%" y2="0">
-      <stop offset="0%" stop-color="#222630" stop-opacity="0" />
-      <stop offset="60%" stop-color="#222630" stop-opacity="1" />
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.8" />
+    <!-- Ultra-smooth symmetrical fade from transparent -> vibrant -> transparent -->
+    <linearGradient id="line-grad" x1="0" y1="0" x2="100%" y2="0">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="25%" stop-color="#00F0FF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.6" />
+      <stop offset="75%" stop-color="#00F0FF" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
     </linearGradient>
 
-    <linearGradient id="trace-right" x1="0" y1="0" x2="100%" y2="0">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.8" />
-      <stop offset="40%" stop-color="#222630" stop-opacity="1" />
-      <stop offset="100%" stop-color="#222630" stop-opacity="0" />
-    </linearGradient>
-
-    <radialGradient id="center-glow" cx="450" cy="18" r="40" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.3" />
+    <!-- Subtle soft light halo around the center micro-design -->
+    <radialGradient id="center-halo" cx="450" cy="12" r="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
     </radialGradient>
   </defs>
 
-  <!-- Central Glow Accent -->
-  <rect x="400" y="0" width="100" height="36" fill="url(#center-glow)"/>
+  <!-- Left Side Hairline -->
+  <line x1="100" y1="12" x2="438" y2="12" stroke="url(#line-grad)" stroke-width="1"/>
 
-  <!-- Left PCB Trace -->
-  <line x1="60" y1="18" x2="410" y2="18" stroke="url(#trace-left)" stroke-width="1.5"/>
+  <!-- Right Side Hairline -->
+  <line x1="462" y1="12" x2="800" y2="12" stroke="url(#line-grad)" stroke-width="1"/>
 
-  <!-- Right PCB Trace -->
-  <line x1="490" y1="18" x2="840" y2="18" stroke="url(#trace-right)" stroke-width="1.5"/>
+  <!-- Tiny Ultra-Minimalist Central Design -->
+  <g transform="translate(450, 12)">
+    <!-- Soft Luminous Halo -->
+    <circle cx="0" cy="0" r="10" fill="url(#center-halo)"/>
 
-  <!-- Center High-Tech Junction Node -->
-  <g transform="translate(450, 18)">
-    <!-- Outer Brackets -->
-    <path d="M-34 -5 L-39 0 L-34 5 M34 -5 L39 0 L34 5" stroke="#8B5CF6" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <!-- Inner Diamond -->
-    <path d="M 0 -6 L 6 0 L 0 6 L -6 0 Z" fill="#A78BFA" stroke="#050505" stroke-width="1">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    <!-- Left micro-dot -->
+    <circle cx="-6" cy="0" r="1" fill="#00A3FF" fill-opacity="0.7"/>
+
+    <!-- Petite Center Diamond Node -->
+    <path d="M 0 -2.5 L 2.5 0 L 0 2.5 L -2.5 0 Z" fill="#00FFA3">
+      <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
     </path>
-    
-    <!-- Side Nodes -->
-    <circle cx="-18" cy="0" r="2" fill="#222630"/>
-    <circle cx="-25" cy="0" r="1.5" fill="#34D399">
-      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
-    </circle>
-    
-    <circle cx="18" cy="0" r="2" fill="#222630"/>
-    <circle cx="25" cy="0" r="1.5" fill="#34D399">
-      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
-    </circle>
+
+    <!-- Right micro-dot -->
+    <circle cx="6" cy="0" r="1" fill="#00A3FF" fill-opacity="0.7"/>
   </g>
 </svg>
