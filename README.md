@@ -100,24 +100,3 @@
 </div>
 
 <br>
-
-<details align="center">
-  <summary><b>💡 How to easily switch this README between 4 color themes (Teal, Violet, Emerald, Gold)</b></summary>
-  <br>
-  <p>This profile repository features an instantaneous built-in Multi-Theme switcher! Open a terminal in your project directory and run:</p>
-
-  ```bash
-  # Switch to Quantum Teal (Cyber-minimalist default)
-  python switch_theme.py teal
-
-  # Switch to Electric Violet (Sophisticated architectural style)
-  python switch_theme.py violet
-
-  # Switch to Emerald Matrix (Core developer terminal aesthetic)
-  python switch_theme.py emerald
-
-  # Switch to Minimal Gold (Timeless monochrome & luxury finish)
-  python switch_theme.py gold
-  ```
-  <p>Once run, commit and push the modified files to immediately refresh your GitHub Profile aesthetics!</p>
-</details>
