@@ -2,8 +2,8 @@
   <defs>
     <style>
       .title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 44px; font-weight: 800; fill: #F8FAFC; letter-spacing: -1.5px; }
-      .tagline { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 500; fill: #8B94A0; letter-spacing: -0.2px; }
-      .subtagline { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 400; fill: #646D7A; letter-spacing: -0.1px; }
+      .typed-text { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 14px; font-weight: 700; fill: #00F0FF; letter-spacing: 0.5px; }
+      .subtagline { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 400; fill: #8B94A0; letter-spacing: 0.1px; }
       .accent-text { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #00F0FF; letter-spacing: 1px; text-transform: uppercase; }
       .badge-text { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 600; fill: #E2E8F0; letter-spacing: 0.5px; }
       .status-text { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #00FFA3; letter-spacing: 0.8px; }
@@ -12,7 +12,7 @@
     <!-- Dynamic Breathing Glow 1 -->
     <radialGradient id="glow1" cx="850" cy="50" r="300" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.2">
-        <animate attributeName="stop-opacity" values="0.15;0.3;0.15" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="stop-opacity" values="0.15;0.28;0.15" dur="5s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
     </radialGradient>
@@ -20,17 +20,10 @@
     <!-- Dynamic Breathing Glow 2 -->
     <radialGradient id="glow2" cx="50" cy="240" r="250" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#00A3FF" stop-opacity="0.15">
-        <animate attributeName="stop-opacity" values="0.1;0.22;0.1" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="stop-opacity" values="0.1;0.22;0.1" dur="6s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
     </radialGradient>
-
-    <!-- Laser Scan Gradient -->
-    <linearGradient id="laser-scan" x1="0" y1="0" x2="0" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
-    </linearGradient>
 
     <linearGradient id="divider-grad" x1="0" y1="0" x2="100%" y2="0">
       <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.9" />
@@ -41,19 +34,20 @@
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#222630" stroke-width="1" stroke-opacity="0.25"/>
     </pattern>
+
+    <!-- Typing Effect Clip Path (Width animates from 0 to 640px) -->
+    <clipPath id="typing-clip">
+      <rect x="0" y="-16" width="0" height="24">
+        <animate attributeName="width" values="0;0;640;640;0;0" keyTimes="0;0.1;0.5;0.85;0.95;1" dur="11s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
   </defs>
 
-  <!-- Base Card Shell -->
+  <!-- Base Card Shell & Background -->
   <rect width="898" height="278" x="1" y="1" rx="20" fill="#050505" stroke="#222630" stroke-width="1.5"/>
   <rect width="898" height="278" x="1" y="1" rx="20" fill="url(#grid)" />
   <rect width="898" height="278" x="1" y="1" rx="20" fill="url(#glow1)" />
   <rect width="898" height="278" x="1" y="1" rx="20" fill="url(#glow2)" />
-
-  <!-- Animated Horizontal Laser Sweep across the background -->
-  <rect x="2" y="0" width="896" height="4" fill="url(#laser-scan)" opacity="0.6">
-    <animate attributeName="y" values="2;274;2" dur="10s" repeatCount="indefinite" ease="in-out"/>
-    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite"/>
-  </rect>
 
   <!-- Top Window Controls -->
   <g transform="translate(28, 26)">
@@ -64,7 +58,7 @@
     </circle>
   </g>
 
-  <!-- Status Indicator Pill (Top Right) - Pure SMIL Animation keeps coordinates strictly inside box -->
+  <!-- Status Indicator Pill (Top Right) -->
   <g transform="translate(545, 20)">
     <rect width="325" height="28" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
     
@@ -77,7 +71,6 @@
       <animate attributeName="r" values="4;8;4" dur="1.8s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="0.6;0;0.6" dur="1.8s" repeatCount="indefinite" />
     </circle>
-    <!-- Solid Core Green Beacon -->
     <circle cx="20" cy="14" r="4.5" fill="#00FFA3">
       <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
     </circle>
@@ -90,22 +83,32 @@
     <!-- Accent Prefix -->
     <text x="0" y="12" class="accent-text">// FULL-STACK SOFTWARE ENGINEER &amp; ARCHITECT</text>
     
-    <!-- Display Title with Animated Blinking Accent -->
+    <!-- Display Title -->
     <text x="0" y="62" class="title">DEEP RADADIYA<tspan fill="#00F0FF"><animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite" />.</tspan></text>
     
-    <!-- Divider accent line beneath title with glowing shimmer -->
+    <!-- Divider accent line beneath title -->
     <rect x="0" y="80" width="340" height="2" rx="1" fill="url(#divider-grad)">
       <animate attributeName="width" values="320;360;320" dur="6s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- Bio / Descriptions -->
-    <text x="0" y="110" class="tagline">Architecting scalable modern web platforms, real-time engines &amp; intelligent automation.</text>
-    <text x="0" y="132" class="subtagline">Specializing in MERN stack, Django backend architecture, and high-performance user experiences.</text>
+    <!-- Animated Developer Terminal Typing Effect -->
+    <g transform="translate(0, 112)">
+      <!-- Typed Monospace String clipped by animating mask -->
+      <text x="0" y="0" class="typed-text" clip-path="url(#typing-clip)">&gt; system.execute("Architecting Scalable Real-Time Web Platforms...");</text>
+      
+      <!-- Blinking Terminal Block Cursor tracking the text width -->
+      <rect x="0" y="-12" width="8" height="15" rx="1" fill="#00F0FF">
+        <animate attributeName="x" values="0;0;640;640;0;0" keyTimes="0;0.1;0.5;0.85;0.95;1" dur="11s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="opacity" values="1;0;1;0;1" dur="0.75s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Static Subtitle Description -->
+    <text x="0" y="138" class="subtagline">Specializing in MERN stack, Django backend engines, and asynchronous automation suites.</text>
   </g>
 
   <!-- Bottom Badges Row with Subtle Pulsing Indicators -->
   <g transform="translate(45, 226)">
-    <!-- Pill 1 -->
     <g transform="translate(0, 0)">
       <rect width="145" height="28" rx="6" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
       <circle cx="15" cy="14" r="3" fill="#00F0FF">
@@ -114,7 +117,6 @@
       <text x="28" y="18" class="badge-text">C++ • JS • PYTHON</text>
     </g>
 
-    <!-- Pill 2 -->
     <g transform="translate(157, 0)">
       <rect width="180" height="28" rx="6" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
       <circle cx="15" cy="14" r="3" fill="#00A3FF">
@@ -123,7 +125,6 @@
       <text x="28" y="18" class="badge-text">REACT • DJANGO • MERN</text>
     </g>
 
-    <!-- Pill 3 -->
     <g transform="translate(349, 0)">
       <rect width="170" height="28" rx="6" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
       <circle cx="15" cy="14" r="3" fill="#00F0FF">
@@ -132,7 +133,6 @@
       <text x="28" y="18" class="badge-text">REAL-TIME WEB ARCHS</text>
     </g>
     
-    <!-- Pill 4 -->
     <g transform="translate(531, 0)">
       <rect width="150" height="28" rx="6" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
       <circle cx="15" cy="14" r="3" fill="#00FFA3">
