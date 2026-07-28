@@ -71,7 +71,7 @@
 <br>
 
 <div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=DeepJRadadiya&bg_color=0D0E12&color=A78BFA&line=A78BFA&point=34D399&area=true&hide_border=false&border_color=222630&radius=14" alt="Contribution Activity Graph" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=DeepJRadadiya&bg_color=0D0E12&color=A78BFA&line=A78BFA&point=F472B6&area=true&hide_border=false&border_color=222630&radius=14" alt="Contribution Activity Graph" />
 </div>
 
 <br><br>

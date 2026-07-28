@@ -40,7 +40,7 @@ THEMES = {
         "name": "Electric Violet [VIOLET]",
         "primary": "#A78BFA",
         "secondary": "#8B5CF6",
-        "status": "#34D399",
+        "status": "#F472B6",
         "readme_theme": "radical",
         "graph_line": "A78BFA",
         "graph_point": "F472B6",
@@ -50,7 +50,7 @@ THEMES = {
         "name": "Emerald Matrix [EMERALD]",
         "primary": "#10B981",
         "secondary": "#059669",
-        "status": "#22C55E",
+        "status": "#34D399",
         "readme_theme": "merko",
         "graph_line": "10B981",
         "graph_point": "34D399",
@@ -60,13 +60,16 @@ THEMES = {
         "name": "Minimal Gold [GOLD]",
         "primary": "#FACC15",
         "secondary": "#EAB308",
-        "status": "#38BDF8",
+        "status": "#F97316",
         "readme_theme": "vision-friendly-dark",
         "graph_line": "FACC15",
         "graph_point": "F97316",
         "badge_color": "FACC15"
     }
 }
+
+# Legacy and auxiliary color codes across previous iterations to ensure clean cleanup
+LEGACY_STATUS_HEXES = ["#34D399", "#38BDF8", "#00FFA3", "#22C55E", "#F472B6", "#F97316"]
 
 def get_all_target_files(root_dir):
     svg_files = glob.glob(os.path.join(root_dir, "assets", "**", "*.svg"), recursive=True)
@@ -96,7 +99,6 @@ def switch_theme(target_theme_key):
 
     print(f"[THEME SHIFT] Transforming profile aesthetics to: {target_theme['name']} ...")
 
-    # Step 1: Gather all known values across all themes to map to generic tokens
     for file_path in files:
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
@@ -115,6 +117,11 @@ def switch_theme(target_theme_key):
             content = content.replace(f"color={t_val['graph_line']}&line={t_val['graph_line']}", "color=__TOKEN_LINE__&line=__TOKEN_LINE__")
             content = content.replace(f"point={t_val['graph_point']}", "point=__TOKEN_POINT__")
             content = content.replace(f"logoColor={t_val['badge_color']}", "logoColor=__TOKEN_BADGE_COLOR__")
+
+        # Catch any stray legacy status colors that might not have matched current dictionaries
+        for legacy_hex in LEGACY_STATUS_HEXES:
+            content = content.replace(legacy_hex, "__TOKEN_STATUS__")
+            content = content.replace(legacy_hex.lstrip("#"), "__TOKEN_RAW_STATUS__")
 
         # Phase 2: Substitute tokens with the newly targeted theme values
         content = content.replace("__TOKEN_PRIMARY__", target_theme["primary"])

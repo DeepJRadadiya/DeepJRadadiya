@@ -91,7 +91,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Django &amp; REST API</text>
       <text x="16" y="38" class="item-desc">Robust relational ORM &amp; schedulers</text>
-      <circle cx="205" cy="24" r="3" fill="#34D399"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.1s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#F472B6"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.1s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Node & Express -->
@@ -108,7 +108,7 @@
     <rect width="265" height="246" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 24)">
-      <circle cx="10" cy="8" r="5" fill="#34D399">
+      <circle cx="10" cy="8" r="5" fill="#F472B6">
         <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
       </circle>
       <text x="26" y="13" class="col-title">DATABASES &amp; TOOLS</text>
@@ -135,7 +135,7 @@
       <rect width="225" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Git, GitHub &amp; Postman</text>
       <text x="16" y="38" class="item-desc">Version governance &amp; API testing</text>
-      <circle cx="205" cy="24" r="3" fill="#34D399"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#F472B6"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.6s" repeatCount="indefinite"/></circle>
     </g>
   </g>
 </svg>

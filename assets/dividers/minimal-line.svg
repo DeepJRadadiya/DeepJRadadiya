@@ -3,9 +3,9 @@
     <!-- Vibrant full-width luminous line gradient -->
     <linearGradient id="full-line" x1="0" y1="0" x2="100%" y2="0">
       <stop offset="0%" stop-color="#222630" stop-opacity="0.3" />
-      <stop offset="25%" stop-color="#00A3FF" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#00F0FF" stop-opacity="1" />
-      <stop offset="75%" stop-color="#00FFA3" stop-opacity="0.8" />
+      <stop offset="25%" stop-color="#8B5CF6" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="1" />
+      <stop offset="75%" stop-color="#F472B6" stop-opacity="0.8" />
       <stop offset="100%" stop-color="#222630" stop-opacity="0.3" />
     </linearGradient>
 
@@ -20,7 +20,7 @@
   </defs>
 
   <!-- Full-Width Luminous Background Halo -->
-  <line x1="15" y1="10" x2="885" y2="10" stroke="#00F0FF" stroke-opacity="0.15" stroke-width="4"/>
+  <line x1="15" y1="10" x2="885" y2="10" stroke="#A78BFA" stroke-opacity="0.15" stroke-width="4"/>
 
   <!-- Crisp, Distinct Full-Width Minimalist Line -->
   <line x1="15" y1="10" x2="885" y2="10" stroke="url(#full-line)" stroke-width="1.5" stroke-linecap="round"/>
@@ -28,8 +28,8 @@
   <!-- Single Tiny, Clean Minimalist Center Design -->
   <g transform="translate(450, 10)">
     <!-- Small geometric center diamond node sitting directly atop the line -->
-    <path d="M 0 -4 L 4 0 L 0 4 L -4 0 Z" fill="#050505" stroke="#00F0FF" stroke-width="1.5">
-      <animate attributeName="stroke" values="#00F0FF;#00FFA3;#00F0FF" dur="4s" repeatCount="indefinite"/>
+    <path d="M 0 -4 L 4 0 L 0 4 L -4 0 Z" fill="#050505" stroke="#A78BFA" stroke-width="1.5">
+      <animate attributeName="stroke" values="#A78BFA;#F472B6;#A78BFA" dur="4s" repeatCount="indefinite"/>
     </path>
   </g>
 </svg>
