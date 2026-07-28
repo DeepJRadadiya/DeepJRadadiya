@@ -17,19 +17,19 @@
 
 <br>
 
-<div align="center">
+<!-- <div align="center">
   <img src="./assets/dividers/minimal-line.svg" width="100%" alt="Divider" />
-</div>
+</div> -->
 
 <div align="center">
   <img src="./assets/cards/projects-showcase.svg" width="100%" alt="Featured Engineered Platforms: IRCTC-AutoBook, Zynk, Skill-Swap, SpendWise & Batting-Mania" />
 </div>
 
 <br>
-
+<!-- 
 <div align="center">
   <img src="./assets/dividers/minimal-line.svg" width="100%" alt="Divider" />
-</div>
+</div> -->
 
 <div align="center">
   <img src="./assets/components/tech-dna.svg" width="100%" alt="Technical Competency DNA & Tooling Stack" />
@@ -37,9 +37,9 @@
 
 <br>
 
-<div align="center">
+<!-- <div align="center">
   <img src="./assets/dividers/minimal-line.svg" width="100%" alt="Divider" />
-</div>
+</div> -->
 
 <div align="center">
 
@@ -56,9 +56,9 @@
 
 <br>
 
-<div align="center">
+<!-- <div align="center">
   <img src="./assets/dividers/minimal-line.svg" width="100%" alt="Divider" />
-</div>
+</div> -->
 
 <div align="center">
 
@@ -76,9 +76,9 @@
 
 <br>
 
-<div align="center">
+<!-- <div align="center">
   <img src="./assets/dividers/minimal-line.svg" width="100%" alt="Divider" />
-</div>
+</div> -->
 
 <div align="center">
   <img src="./assets/banners/footer.svg" width="100%" alt="Engineered by Deep Radadiya" />
