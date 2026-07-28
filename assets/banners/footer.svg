@@ -1,0 +1,29 @@
+<svg width="900" height="140" viewBox="0 0 900 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .sig-title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 22px; font-weight: 800; fill: #F8FAFC; letter-spacing: -0.6px; }
+      .sub-sig { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 600; fill: #8B94A0; letter-spacing: 1px; text-transform: uppercase; }
+      .status { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #00FFA3; letter-spacing: 0.8px; }
+    </style>
+    <radialGradient id="foot-glow" cx="450" cy="70" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00A3FF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Card shell -->
+  <rect width="898" height="138" x="1" y="1" rx="20" fill="#050505" stroke="#222630" stroke-width="1.5"/>
+  <rect width="898" height="138" x="1" y="1" rx="20" fill="url(#foot-glow)" />
+
+  <g transform="translate(45, 52)">
+    <text x="0" y="0" class="sub-sig">// SESSION COMPLETE • ARCHITECTURE DEPLOYED</text>
+    <text x="0" y="32" class="sig-title">ENGINEERED BY DEEP RADADIYA<tspan fill="#00F0FF">.</tspan></text>
+  </g>
+
+  <!-- Right Side Badge -->
+  <g transform="translate(585, 48)">
+    <rect width="270" height="42" rx="21" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
+    <circle cx="24" cy="21" r="4.5" fill="#00FFA3"/>
+    <text x="42" y="25" class="status">CONNECT &amp; COLLABORATE ↗</text>
+  </g>
+</svg>
