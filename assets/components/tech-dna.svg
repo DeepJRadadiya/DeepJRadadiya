@@ -5,11 +5,11 @@
       .col-title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 700; fill: #F8FAFC; letter-spacing: 0.2px; }
       .item-name { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 600; fill: #E2E8F0; }
       .item-desc { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 400; fill: #8B94A0; }
-      .accent-header { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #00F0FF; letter-spacing: 1.2px; text-transform: uppercase; }
+      .accent-header { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #A78BFA; letter-spacing: 1.2px; text-transform: uppercase; }
     </style>
 
     <radialGradient id="dna-glow" cx="450" cy="150" r="350" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#00A3FF" stop-opacity="0.14">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.14">
         <animate attributeName="stop-opacity" values="0.08;0.18;0.08" dur="6s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
@@ -26,7 +26,7 @@
     <text x="0" y="28" class="section-title">ENGINEERING DNA &amp; ARCHITECTURAL STACK</text>
     <line x1="0" y1="42" x2="834" y2="42" stroke="#222630" stroke-width="1"/>
     <!-- Animated pulse dot across the line -->
-    <circle cx="834" cy="42" r="2.5" fill="#00A3FF">
+    <circle cx="834" cy="42" r="2.5" fill="#8B5CF6">
       <animate attributeName="cx" values="834;0;834" dur="14s" repeatCount="indefinite" ease="in-out"/>
     </circle>
   </g>
@@ -36,7 +36,7 @@
     <rect width="267" height="246" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 24)">
-      <circle cx="10" cy="8" r="5" fill="#00F0FF">
+      <circle cx="10" cy="8" r="5" fill="#A78BFA">
         <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
       </circle>
       <text x="26" y="13" class="col-title">CORE LANGUAGES</text>
@@ -47,7 +47,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">C++ Programming</text>
       <text x="16" y="38" class="item-desc">System algorithms &amp; high efficiency</text>
-      <circle cx="205" cy="24" r="3" fill="#00F0FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="2s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#A78BFA"><animate attributeName="r" values="2.5;3.5;2.5" dur="2s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- JavaScript -->
@@ -55,7 +55,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">JavaScript / ES6+</text>
       <text x="16" y="38" class="item-desc">Realtime async &amp; frontend logic</text>
-      <circle cx="205" cy="24" r="3" fill="#00A3FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#8B5CF6"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.4s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Python -->
@@ -63,7 +63,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Python 3</text>
       <text x="16" y="38" class="item-desc">Backend engines, scripting &amp; AI</text>
-      <circle cx="205" cy="24" r="3" fill="#00F0FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#A78BFA"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.8s" repeatCount="indefinite"/></circle>
     </g>
   </g>
 
@@ -72,7 +72,7 @@
     <rect width="267" height="246" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 24)">
-      <circle cx="10" cy="8" r="5" fill="#00A3FF">
+      <circle cx="10" cy="8" r="5" fill="#8B5CF6">
         <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
       </circle>
       <text x="26" y="13" class="col-title">FRAMEWORKS &amp; WEB</text>
@@ -83,7 +83,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">React &amp; Tailwind CSS</text>
       <text x="16" y="38" class="item-desc">High-fidelity responsive SPA UI</text>
-      <circle cx="205" cy="24" r="3" fill="#00F0FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#A78BFA"><animate attributeName="r" values="2.5;3.5;2.5" dur="3.1s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Django & DRF -->
@@ -91,7 +91,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Django &amp; REST API</text>
       <text x="16" y="38" class="item-desc">Robust relational ORM &amp; schedulers</text>
-      <circle cx="205" cy="24" r="3" fill="#00FFA3"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.1s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#34D399"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.1s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Node & Express -->
@@ -99,7 +99,7 @@
       <rect width="227" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Node.js &amp; Express.js</text>
       <text x="16" y="38" class="item-desc">Event-driven server architectures</text>
-      <circle cx="205" cy="24" r="3" fill="#00A3FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#8B5CF6"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.7s" repeatCount="indefinite"/></circle>
     </g>
   </g>
 
@@ -108,7 +108,7 @@
     <rect width="265" height="246" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 24)">
-      <circle cx="10" cy="8" r="5" fill="#00FFA3">
+      <circle cx="10" cy="8" r="5" fill="#34D399">
         <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
       </circle>
       <text x="26" y="13" class="col-title">DATABASES &amp; TOOLS</text>
@@ -119,7 +119,7 @@
       <rect width="225" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">MongoDB &amp; SQL</text>
       <text x="16" y="38" class="item-desc">NoSQL clusters &amp; relational schemas</text>
-      <circle cx="205" cy="24" r="3" fill="#00A3FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.3s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#8B5CF6"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.3s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Docker -->
@@ -127,7 +127,7 @@
       <rect width="225" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Docker &amp; Containers</text>
       <text x="16" y="38" class="item-desc">Reproducible deployment suites</text>
-      <circle cx="205" cy="24" r="3" fill="#00F0FF"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#A78BFA"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.9s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Git & Postman -->
@@ -135,7 +135,7 @@
       <rect width="225" height="48" rx="8" fill="#14161C" stroke="#222630" stroke-width="0.8"/>
       <text x="16" y="22" class="item-name">Git, GitHub &amp; Postman</text>
       <text x="16" y="38" class="item-desc">Version governance &amp; API testing</text>
-      <circle cx="205" cy="24" r="3" fill="#00FFA3"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="24" r="3" fill="#34D399"><animate attributeName="r" values="2.5;3.5;2.5" dur="2.6s" repeatCount="indefinite"/></circle>
     </g>
   </g>
 </svg>

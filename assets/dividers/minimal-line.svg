@@ -3,17 +3,17 @@
     <linearGradient id="trace-left" x1="0" y1="0" x2="100%" y2="0">
       <stop offset="0%" stop-color="#222630" stop-opacity="0" />
       <stop offset="60%" stop-color="#222630" stop-opacity="1" />
-      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.8" />
     </linearGradient>
 
     <linearGradient id="trace-right" x1="0" y1="0" x2="100%" y2="0">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.8" />
       <stop offset="40%" stop-color="#222630" stop-opacity="1" />
       <stop offset="100%" stop-color="#222630" stop-opacity="0" />
     </linearGradient>
 
     <radialGradient id="center-glow" cx="450" cy="18" r="40" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
     </radialGradient>
   </defs>
@@ -30,21 +30,21 @@
   <!-- Center High-Tech Junction Node -->
   <g transform="translate(450, 18)">
     <!-- Outer Brackets -->
-    <path d="M-34 -5 L-39 0 L-34 5 M34 -5 L39 0 L34 5" stroke="#00A3FF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-34 -5 L-39 0 L-34 5 M34 -5 L39 0 L34 5" stroke="#8B5CF6" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     
     <!-- Inner Diamond -->
-    <path d="M 0 -6 L 6 0 L 0 6 L -6 0 Z" fill="#00F0FF" stroke="#050505" stroke-width="1">
+    <path d="M 0 -6 L 6 0 L 0 6 L -6 0 Z" fill="#A78BFA" stroke="#050505" stroke-width="1">
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
     </path>
     
     <!-- Side Nodes -->
     <circle cx="-18" cy="0" r="2" fill="#222630"/>
-    <circle cx="-25" cy="0" r="1.5" fill="#00FFA3">
+    <circle cx="-25" cy="0" r="1.5" fill="#34D399">
       <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
     </circle>
     
     <circle cx="18" cy="0" r="2" fill="#222630"/>
-    <circle cx="25" cy="0" r="1.5" fill="#00FFA3">
+    <circle cx="25" cy="0" r="1.5" fill="#34D399">
       <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
     </circle>
   </g>

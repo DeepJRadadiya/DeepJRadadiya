@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
 """
-OBSIDIAN // AETHER — Instant Multi-Theme Switcher
+OBSIDIAN // AETHER — Instant Multi-Theme Switcher & Automated Daily Rotator
 Engineered for Deep Radadiya's Minimalist GitHub Profile Repository.
 
 Usage:
-    python switch_theme.py <theme_name>
+    python switch_theme.py <theme_name | rotate>
 
-Available themes:
+Available commands:
     teal    : Quantum Teal (Cyber-minimalist default)
     violet  : Electric Violet (Sophisticated architectural style)
     emerald : Emerald Matrix (Core developer terminal aesthetic)
     gold    : Minimal Gold (Timeless monochrome & luxury finish)
+    rotate  : Automatically selects today's scheduled rotating palette!
 """
 
 import sys
 import os
 import glob
+import datetime
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
@@ -75,9 +77,17 @@ def get_all_target_files(root_dir):
     return files
 
 def switch_theme(target_theme_key):
+    # Handle automated schedule rotation mode for GitHub Actions CI/CD
+    if target_theme_key in ["rotate", "auto"]:
+        theme_keys = list(THEMES.keys())
+        # Cycle systematically based on the day of the year
+        day_index = datetime.datetime.now().toordinal() % len(theme_keys)
+        target_theme_key = theme_keys[day_index]
+        print(f"[AUTOMATED ROTATOR] Today's calendar rotation index chose theme: '{target_theme_key}'.")
+
     if target_theme_key not in THEMES:
         print(f"[ERROR] Unknown theme '{target_theme_key}'.")
-        print(f"--> Available choices: {', '.join(THEMES.keys())}")
+        print(f"--> Available choices: {', '.join(list(THEMES.keys()) + ['rotate', 'auto'])}")
         sys.exit(1)
 
     target_theme = THEMES[target_theme_key]
@@ -93,7 +103,6 @@ def switch_theme(target_theme_key):
 
         # Phase 1: Convert known theme hexes and parameters to tokens
         for t_key, t_val in THEMES.items():
-            # Match both prefixed hex (#00F0FF) and bare URL parameters (00F0FF)
             content = content.replace(t_val["primary"], "__TOKEN_PRIMARY__")
             content = content.replace(t_val["secondary"], "__TOKEN_SECONDARY__")
             content = content.replace(t_val["status"], "__TOKEN_STATUS__")
@@ -129,7 +138,7 @@ def switch_theme(target_theme_key):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python switch_theme.py [teal | violet | emerald | gold]")
+        print("Usage: python switch_theme.py [teal | violet | emerald | gold | rotate]")
         sys.exit(1)
     
     switch_theme(sys.argv[1].lower())

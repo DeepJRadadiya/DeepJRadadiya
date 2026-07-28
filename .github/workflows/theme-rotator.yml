@@ -1,0 +1,51 @@
+name: Automated Profile Theme Rotator
+
+on:
+  # Run automatically every day at midnight UTC (00:00)
+  schedule:
+    - cron: "0 0 * * *"
+  
+  # Allow manual trigger at any time from GitHub Actions tab
+  workflow_dispatch:
+    inputs:
+      target_theme:
+        description: "Choose theme to apply immediately (teal, violet, emerald, gold, or rotate)"
+        required: false
+        default: "rotate"
+
+permissions:
+  contents: write
+
+jobs:
+  rotate-theme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Execute Theme Transformation
+        run: |
+          THEME="${{ github.event.inputs.target_theme || 'rotate' }}"
+          echo "Executing switch_theme.py with argument: $THEME"
+          python switch_theme.py "$THEME"
+
+      - name: Commit and Push Updated Profile Palette
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assets/ README.md switch_theme.py
+          
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "🎨 [Auto-Rotator] Dynamic profile aesthetic shift applied"
+            git push origin main
+            echo "[SUCCESS] New profile theme palette committed and deployed to GitHub!"
+          else
+            echo "[NOTICE] Theme already matches today's palette. No new commit needed."
+          fi
