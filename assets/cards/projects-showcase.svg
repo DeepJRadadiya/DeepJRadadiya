@@ -4,28 +4,28 @@
       .section-title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 20px; font-weight: 800; fill: #F8FAFC; letter-spacing: -0.5px; }
       .card-title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 700; fill: #F8FAFC; letter-spacing: -0.3px; }
       .card-desc { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 400; fill: #8B94A0; letter-spacing: 0.1px; }
-      .accent-header { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #FACC15; letter-spacing: 1.2px; text-transform: uppercase; }
-      .tag-pill { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 600; fill: #FACC15; letter-spacing: 0.4px; }
+      .accent-header { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #00F0FF; letter-spacing: 1.2px; text-transform: uppercase; }
+      .tag-pill { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 600; fill: #00F0FF; letter-spacing: 0.4px; }
       .tag-pill-sec { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 600; fill: #E2E8F0; letter-spacing: 0.4px; }
-      .link-text { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #EAB308; letter-spacing: 0.5px; }
+      .link-text { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #00A3FF; letter-spacing: 0.5px; }
     </style>
     
     <radialGradient id="header-glow" cx="150" cy="0" r="250" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FACC15" stop-opacity="0.18">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.18">
         <animate attributeName="stop-opacity" values="0.12;0.22;0.12" dur="5s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="card-glow1" cx="300" cy="50" r="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FACC15" stop-opacity="0.12">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.12">
         <animate attributeName="stop-opacity" values="0.08;0.18;0.08" dur="4s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#0D0E12" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="card-glow2" cx="300" cy="50" r="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#EAB308" stop-opacity="0.12">
+      <stop offset="0%" stop-color="#00A3FF" stop-opacity="0.12">
         <animate attributeName="stop-opacity" values="0.08;0.18;0.08" dur="4.5s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#0D0E12" stop-opacity="0" />
@@ -42,7 +42,7 @@
     <text x="0" y="28" class="section-title">ENGINEERED FULL-STACK ARCHITECTURES</text>
     <line x1="0" y1="42" x2="834" y2="42" stroke="#222630" stroke-width="1"/>
     <!-- Tiny Travelling Light Particle on Header Line -->
-    <circle cx="0" cy="42" r="2.5" fill="#FACC15">
+    <circle cx="0" cy="42" r="2.5" fill="#00F0FF">
       <animate attributeName="cx" values="0;834;0" dur="12s" repeatCount="indefinite" ease="in-out"/>
     </circle>
   </g>
@@ -53,12 +53,12 @@
   <g transform="translate(32, 100)">
     <rect width="409" height="210" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     <rect width="409" height="210" rx="14" fill="url(#card-glow1)"/>
-    <path d="M 0 14 C 0 6.27 6.27 0 14 0 L 140 0 L 120 4 L 0 4 Z" fill="#FACC15" fill-opacity="0.8"/>
+    <path d="M 0 14 C 0 6.27 6.27 0 14 0 L 140 0 L 120 4 L 0 4 Z" fill="#00F0FF" fill-opacity="0.8"/>
     
     <!-- Icon (Train/Lightning Automation with Pulse) -->
     <g transform="translate(24, 24)">
-      <circle cx="22" cy="22" r="20" fill="#14161C" stroke="#FACC15" stroke-width="1.5"/>
-      <path d="M22 13 L17 23 L23 23 L21 32 L28 21 L22 21 Z" fill="#FACC15">
+      <circle cx="22" cy="22" r="20" fill="#14161C" stroke="#00F0FF" stroke-width="1.5"/>
+      <path d="M22 13 L17 23 L23 23 L21 32 L28 21 L22 21 Z" fill="#00F0FF">
         <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
       </path>
     </g>
@@ -93,14 +93,14 @@
   <g transform="translate(457, 100)">
     <rect width="409" height="210" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     <rect width="409" height="210" rx="14" fill="url(#card-glow2)"/>
-    <path d="M 0 14 C 0 6.27 6.27 0 14 0 L 140 0 L 120 4 L 0 4 Z" fill="#EAB308" fill-opacity="0.8"/>
+    <path d="M 0 14 C 0 6.27 6.27 0 14 0 L 140 0 L 120 4 L 0 4 Z" fill="#00A3FF" fill-opacity="0.8"/>
 
     <!-- Icon (Realtime Video/Signal with Pulse) -->
     <g transform="translate(24, 24)">
-      <circle cx="22" cy="22" r="20" fill="#14161C" stroke="#EAB308" stroke-width="1.5"/>
-      <rect x="13" y="16" width="12" height="10" rx="2" stroke="#FACC15" stroke-width="2" fill="none"/>
-      <path d="M 26 19 L 31 16 L 31 26 L 26 23 Z" fill="#FACC15"/>
-      <circle cx="22" cy="21" r="2" fill="#FACC15">
+      <circle cx="22" cy="22" r="20" fill="#14161C" stroke="#00A3FF" stroke-width="1.5"/>
+      <rect x="13" y="16" width="12" height="10" rx="2" stroke="#00F0FF" stroke-width="2" fill="none"/>
+      <path d="M 26 19 L 31 16 L 31 26 L 26 23 Z" fill="#00F0FF"/>
+      <circle cx="22" cy="21" r="2" fill="#00F0FF">
         <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
       </circle>
     </g>
@@ -135,8 +135,8 @@
     <rect width="267" height="200" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 20)">
-      <circle cx="18" cy="18" r="16" fill="#14161C" stroke="#FACC15" stroke-width="1.2"/>
-      <path d="M14 14 L22 14 L19 11 M22 22 L14 22 L17 25" stroke="#FACC15" stroke-width="2" stroke-linecap="round">
+      <circle cx="18" cy="18" r="16" fill="#14161C" stroke="#00F0FF" stroke-width="1.2"/>
+      <path d="M14 14 L22 14 L19 11 M22 22 L14 22 L17 25" stroke="#00F0FF" stroke-width="2" stroke-linecap="round">
         <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
       </path>
     </g>
@@ -166,8 +166,8 @@
     <rect width="267" height="200" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 20)">
-      <circle cx="18" cy="18" r="16" fill="#14161C" stroke="#EAB308" stroke-width="1.2"/>
-      <path d="M12 24 L16 18 L20 21 L25 14" stroke="#EAB308" stroke-width="2" stroke-linecap="round">
+      <circle cx="18" cy="18" r="16" fill="#14161C" stroke="#00A3FF" stroke-width="1.2"/>
+      <path d="M12 24 L16 18 L20 21 L25 14" stroke="#00A3FF" stroke-width="2" stroke-linecap="round">
         <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
       </path>
     </g>
@@ -197,8 +197,8 @@
     <rect width="265" height="200" rx="14" fill="#0D0E12" stroke="#222630" stroke-width="1.2"/>
     
     <g transform="translate(20, 20)">
-      <circle cx="18" cy="18" r="16" fill="#14161C" stroke="#FACC15" stroke-width="1.2"/>
-      <path d="M14 13 L22 13 L20 20 L16 20 Z M16 23 L20 23" stroke="#FACC15" stroke-width="2" stroke-linecap="round">
+      <circle cx="18" cy="18" r="16" fill="#14161C" stroke="#00F0FF" stroke-width="1.2"/>
+      <path d="M14 13 L22 13 L20 20 L16 20 Z M16 23 L20 23" stroke="#00F0FF" stroke-width="2" stroke-linecap="round">
         <animate attributeName="opacity" values="1;0.4;1" dur="2.7s" repeatCount="indefinite"/>
       </path>
     </g>
