@@ -2,18 +2,18 @@
   <defs>
     <style>
       .title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; fill: #F8FAFC; letter-spacing: -0.3px; }
-      .accent { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #8B5CF6; letter-spacing: 1.5px; text-transform: uppercase; }
-      .status { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #A78BFA; letter-spacing: 1px; }
+      .accent { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #059669; letter-spacing: 1.5px; text-transform: uppercase; }
+      .status { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #10B981; letter-spacing: 1px; }
     </style>
 
     <linearGradient id="trace-grad2" x1="0" y1="0" x2="100%" y2="0">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="1"/>
-      <stop offset="40%" stop-color="#A78BFA" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#059669" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#10B981" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#222630" stop-opacity="0"/>
     </linearGradient>
 
     <radialGradient id="header-bg-glow2" cx="150" cy="34" r="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.15">
         <animate attributeName="stop-opacity" values="0.1;0.22;0.1" dur="6s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
@@ -25,7 +25,7 @@
   <rect width="898" height="66" x="1" y="1" rx="14" fill="url(#header-bg-glow2)"/>
   
   <!-- Left Accent Bar -->
-  <rect x="1" y="14" width="4" height="38" rx="2" fill="#8B5CF6"/>
+  <rect x="1" y="14" width="4" height="38" rx="2" fill="#059669"/>
 
   <!-- Texts & Titles -->
   <g transform="translate(24, 25)">
@@ -37,17 +37,17 @@
   <rect x="24" y="58" width="460" height="2" rx="1" fill="url(#trace-grad2)"/>
   
   <!-- Travelling Light Particle -->
-  <circle cx="24" cy="59" r="2" fill="#A78BFA">
+  <circle cx="24" cy="59" r="2" fill="#10B981">
     <animate attributeName="cx" values="24;484;24" dur="8s" repeatCount="indefinite" ease="in-out"/>
   </circle>
 
   <!-- Right Status Indicator -->
   <g transform="translate(680, 24)">
     <rect width="195" height="26" rx="13" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
-    <circle cx="18" cy="13" r="3.5" fill="#A78BFA">
+    <circle cx="18" cy="13" r="3.5" fill="#10B981">
       <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="18" cy="13" r="7" fill="none" stroke="#A78BFA" stroke-width="1">
+    <circle cx="18" cy="13" r="7" fill="none" stroke="#10B981" stroke-width="1">
       <animate attributeName="r" values="3.5;9;3.5" dur="2.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2.2s" repeatCount="indefinite"/>
     </circle>
