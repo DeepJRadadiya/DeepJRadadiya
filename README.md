@@ -51,12 +51,12 @@
 <br>
 
 <div align="center">
-  <img height="185" src="https://github-readme-stats-livid-tau-19.vercel.app/api?username=DeepJRadadiya&show_icons=true&bg_color=050505&title_color=FACC15&text_color=E2E8F0&icon_color=EAB308&border_color=222630&border_radius=14&rank_icon=github" alt="GitHub Stats" />
-  <img height="185" src="https://github-readme-streak-stats.herokuapp.com/?user=DeepJRadadiya&background=050505&ring=FACC15&currStreakNum=FACC15&currStreakLabel=FACC15&sideNums=F8FAFC&sideLabels=8B94A0&dates=646D7A&fire=EAB308&border=222630&border_radius=14&stroke=222630" alt="GitHub Contribution Streak" />
+  <img height="185" src="https://github-readme-stats-livid-tau-19.vercel.app/api?username=DeepJRadadiya&show_icons=true&bg_color=050505&title_color=00F0FF&text_color=E2E8F0&icon_color=00A3FF&border_color=222630&border_radius=14&rank_icon=github" alt="GitHub Stats" />
+  <img height="185" src="https://github-readme-streak-stats.herokuapp.com/?user=DeepJRadadiya&background=050505&ring=00F0FF&currStreakNum=00F0FF&currStreakLabel=00F0FF&sideNums=F8FAFC&sideLabels=8B94A0&dates=646D7A&fire=00A3FF&border=222630&border_radius=14&stroke=222630" alt="GitHub Contribution Streak" />
 
   <br><br>
 
-  <img height="185" src="https://github-readme-stats-livid-tau-19.vercel.app/api/top-langs/?username=DeepJRadadiya&layout=compact&bg_color=050505&title_color=FACC15&text_color=E2E8F0&border_color=222630&border_radius=14" alt="Top Programming Languages" />
+  <img height="185" src="https://github-readme-stats-livid-tau-19.vercel.app/api/top-langs/?username=DeepJRadadiya&layout=compact&bg_color=050505&title_color=00F0FF&text_color=E2E8F0&border_color=222630&border_radius=14" alt="Top Programming Languages" />
 </div>
 
 <br><br>
@@ -71,7 +71,7 @@
 <br>
 
 <div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=DeepJRadadiya&bg_color=0D0E12&color=FACC15&line=FACC15&point=F97316&area=true&hide_border=false&border_color=222630&radius=14" alt="Contribution Activity Graph" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=DeepJRadadiya&bg_color=0D0E12&color=00F0FF&line=00F0FF&point=00FFA3&area=true&hide_border=false&border_color=222630&radius=14" alt="Contribution Activity Graph" />
 </div>
 
 <br><br>
