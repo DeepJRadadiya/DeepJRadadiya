@@ -1,12 +1,12 @@
 <svg width="210" height="46" viewBox="0 0 210 46" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .badge-title { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #F472B6; letter-spacing: 1px; text-transform: uppercase; }
+      .badge-title { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #34D399; letter-spacing: 1px; text-transform: uppercase; }
       .badge-val { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #F8FAFC; letter-spacing: -0.2px; }
     </style>
     <radialGradient id="stat-glow" cx="24" cy="23" r="30" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#F472B6" stop-opacity="0" />
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0" />
     </radialGradient>
   </defs>
   
@@ -15,11 +15,11 @@
   
   <!-- Status Pulsing Icon -->
   <g transform="translate(14, 11)">
-    <circle cx="12" cy="12" r="12" fill="#14161C" stroke="#F472B6" stroke-width="1.2"/>
-    <circle cx="12" cy="12" r="4.5" fill="#F472B6">
+    <circle cx="12" cy="12" r="12" fill="#14161C" stroke="#34D399" stroke-width="1.2"/>
+    <circle cx="12" cy="12" r="4.5" fill="#34D399">
       <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
     </circle>
-    <circle cx="12" cy="12" r="8" fill="none" stroke="#F472B6" stroke-width="1">
+    <circle cx="12" cy="12" r="8" fill="none" stroke="#34D399" stroke-width="1">
       <animate attributeName="r" values="3;10;3" dur="2s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
     </circle>
