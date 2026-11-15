@@ -3,10 +3,10 @@
     <style>
       .sig-title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 22px; font-weight: 800; fill: #F8FAFC; letter-spacing: -0.6px; }
       .sub-sig { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 600; fill: #8B94A0; letter-spacing: 1px; text-transform: uppercase; }
-      .status { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #34D399; letter-spacing: 0.8px; }
+      .status { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #F97316; letter-spacing: 0.8px; }
     </style>
     <radialGradient id="foot-glow" cx="450" cy="70" r="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#EAB308" stop-opacity="0.12" />
       <stop offset="100%" stop-color="#050505" stop-opacity="0" />
     </radialGradient>
   </defs>
@@ -17,13 +17,13 @@
 
   <g transform="translate(45, 52)">
     <text x="0" y="0" class="sub-sig">// SESSION COMPLETE • ARCHITECTURE DEPLOYED</text>
-    <text x="0" y="32" class="sig-title">ENGINEERED BY DEEP RADADIYA<tspan fill="#10B981">.</tspan></text>
+    <text x="0" y="32" class="sig-title">ENGINEERED BY DEEP RADADIYA<tspan fill="#FACC15">.</tspan></text>
   </g>
 
   <!-- Right Side Badge -->
   <g transform="translate(585, 48)">
     <rect width="270" height="42" rx="21" fill="#0D0E12" stroke="#222630" stroke-width="1"/>
-    <circle cx="24" cy="21" r="4.5" fill="#34D399"/>
+    <circle cx="24" cy="21" r="4.5" fill="#F97316"/>
     <text x="42" y="25" class="status">CONNECT &amp; COLLABORATE ↗</text>
   </g>
 </svg>
